@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio de ponteiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        height: 100vh;
+        background: linear-gradient(120deg, #e228d9d8, #242424d8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 550px;
+    }
+    .text{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 28px;
+        color: white;
+    }
+    .posicao_relogio{
+        position: absolute;
+        margin-top: 50px;
+        top: 290px;
+        left: 360px;
+    }
+    .posicao_icone_relogio{
+        position: absolute;
+        color: white;
+        top: 200px;
+        left: 370px;
+    }
+    .posicao_relogioponta{
+        position: absolute;
+        margin-top: 50px;
+        top: 20px;
+        left: 630px;
+    }
+    .textoFooter{
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+        margin-top: 50px;
+        top: 500px;
+        left: 400px;
+        color: white;
+    }
+</style>
+<body>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="posicao_icone_relogio bi bi-clock-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+      </svg>
+    <p class="text posicao_relogio"> Relógio</p>
+    <div class="clock text posicao_relogioponta">
+        <div class="time hour" data-hour-hand></div>
+        <div class="time minute" data-minute-hand></div>
+        <div class="time second" data-second-hand></div>
+        <div class="number n1">1</div>
+        <div class="number n2">2</div>
+        <div class="number n3">3</div>
+        <div class="number n4">4</div>
+        <div class="number n5">5</div>
+        <div class="number n6">6</div>
+        <div class="number n7">7</div>
+        <div class="number n8">8</div>
+        <div class="number n9">9</div>
+        <div class="number n10">10</div>
+        <div class="number n11">11</div>
+        <div class="number n12">12</div>
+        
+    </div>
+
+    <p class="textoFooter">Copyright - Aplicação simples com JS - Luiza Oliveira<br></br></p>
+<script src="script.js"></script>
+</body>
+</html>
